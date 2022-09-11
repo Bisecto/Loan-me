@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Register_Page"
+    >
+    <RelativeLayout
+        android:id="@+id/topl"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/loginboard">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/app_name"
+            android:visibility="visible"/>
+    </RelativeLayout>
+<RelativeLayout
+    android:padding="20sp"
+    android:layout_below="@+id/topl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/nice_to_meet_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:text="Hello, nice to meet you!"/>
+    <TextView
+        android:layout_below="@id/nice_to_meet_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Get A Quick Loan With Loan Me"
+        />
+    <Button
+        android:layout_centerInParent="true"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round"
+        android:text="Sign In"
+        android:textColor="#FBFBFB"
+        android:onClick="sign_in"
+        android:theme="@style/ShapeAppearance.MaterialComponents.LargeComponent"/>
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#4CAF50"
+        android:text="Sign Up"/>
+</RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/topl"
+        android:id="@+id/login_layout"
+        android:paddingRight="15sp"
+        android:paddingLeft="15sp"
+        android:paddingTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F8F6"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/tsign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Sign In"/>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_baseline_arrow_downward_24"
+            android:onClick="close"
+            />
+        <TextView
+            android:id="@+id/textphone"
+            android:text="Phone Number"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tsign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <EditText
+            android:hint="Enter Your Phone number"
+            android:id="@+id/Input_Phone"
+            android:inputType="phone"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/textphone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/round"
+            android:focusable="true"/>
+        <TextView
+            android:id="@+id/textpassword"
+            android:text="Password"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/Input_Phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <EditText
+            android:hint="Enter Your Password"
+            android:id="@+id/Input_Password"
+            android:inputType=""
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/textpassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:background="@drawable/round"/>
+        <TextView
+            android:textStyle="italic"
+            android:id="@+id/forgotpass"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/Input_Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"/>
+        <Button
+            android:id="@+id/sign_in"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/Input_Password"
+            android:layout_width="wrap_content"
+            android:background="@drawable/roundgreen"
+            android:layout_height="40dp"
+            android:text="Sign In"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>
